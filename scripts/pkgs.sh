@@ -9,4 +9,4 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 pacman -Syu --noconfirm
-pacman -S --noconfirm fzf neovim zsh starship   
+pacman -S --noconfirm fzf neovim zsh starship polkit xorg-xhost hyprpolkitagent   
