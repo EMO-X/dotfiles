@@ -1,8 +1,13 @@
 {
-    "height": 30,
+    "height": 35,
+    /* "layer": "top", */
+    "position": "top",
+    "margin-top": 10,
+    "margin-right": 10,
+    "margin-left": 10,
     "spacing": 3,
     "modules-left": [
-        "hyprland/workspaces",
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "clock"
@@ -14,7 +19,7 @@
          "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,
-         "format": "{name}: {icon}",
+         "format": "{icon}",
          "format-icons": {
              "urgent": "",
              "active": "",
@@ -29,8 +34,8 @@
     },
 
     "network": {
-        "format-wifi": "  {essid}",
-        "format-disconnected": "⚠  Offline",
+        "format-wifi": "   {essid}",
+        "format-disconnected": "⚠   Offline",
         "interval": 5
     },
 
@@ -41,7 +46,7 @@
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-source-muted": " ",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -62,8 +67,8 @@
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format-charging": "{capacity}%",
+        "format-plugged": "{capacity}%",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -73,5 +78,5 @@
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },    
+    }
 }
