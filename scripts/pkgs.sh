@@ -17,7 +17,7 @@ echo "DNS configuration completed."
 
 #pacman -Syu --noconfirm
 echo "Start install pkgs"
-pacman -S --noconfirm --needed fzf neovim zsh starship bluez bluez-utils blueman base-devel hyprpaper hypridle swaync waybar tlp
+pacman -S --noconfirm --needed fzf neovim zsh starship bluez bluez-utils blueman base-devel hyprpaper hypridle hyprlock swaync waybar tlp
 
 echo "Install fonts "
 pacman -S --noconfirm --needed ttf-font-awesome  ttf-nerd-fonts-symbols ttf-dejavu ttf-liberation noto-fonts
