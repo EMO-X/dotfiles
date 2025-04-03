@@ -1,0 +1,66 @@
+* {
+    font-family: font-awesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color:lightblue;
+    color:Black;
+}
+
+window#waybar {
+    background-color:white;
+    color: black;
+}
+
+#workspaces {
+
+}
+#workspaces button {
+    padding: 0 5px;
+    color: #E5B3D0; 
+}
+
+#workspaces button.active {
+    color: #89B4FA; 
+}
+#workspaces button.hover{
+    color:red;
+}
+
+#clock,
+#battery,
+#network,
+
+#backlight { 
+    margin: 2px;
+    padding: 2px 2px;
+}
+#pulseaudio {
+    margin: 2px;
+    padding: 2px 2px;
+}
+
+#battery {
+   margin: 0 5px; 
+}
+
+#battery.charging, #battery.plugged {
+    color: #1E1E1E;
+    background-color: #A6E3A1;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #F38BA8;
+    color: #1E1E1E;
+}
+
+#pulseaudio.muted {
+   
+}
+#clock{
+    font-weight:bold;
+    font-size:20px;
+}
+#custom-work-mod{
+  font-size:25px;
+  padding :0 10px;
+}
