@@ -1,0 +1,85 @@
+{
+    "height": 40,
+    "position": "top",
+    "margin-top": 5,
+    "margin-right": 10,
+    "margin-left": 10,
+    "spacing": 1,
+    "modules-left": ["custom/work-mod","hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "pulseaudio","backlight", "battery"],
+    
+    // Modules configuration
+     "hyprland/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         "warp-on-scroll": false,
+         "format": "{icon}",
+         "format-icons": {
+             "urgent": "",
+             "active": "",
+             "default": ""
+         }
+     },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%H:%M}",
+        "interval": 10
+    },
+
+    "network": {
+        "format-wifi": "  {essid}",
+        "format-disconnected": "⚠ Offline",
+        "interval": 5
+    },
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": " ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 60,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}%",
+        "format-plugged": "{capacity}%",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}"
+       /* "format-icons": ["", "", "", "", "", "", "", "", ""]*/
+    },
+    "custom/work-mod": {
+         "format": "∫",
+         /*"tooltip": "Waybastom Icon",*/
+         "on-click": "~/.config/waybar/script.sh"
+  }
+   
+
+}
+
